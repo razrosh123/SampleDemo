@@ -135,7 +135,7 @@ System.Web.Services.WebMethod()> _
 
     Private Sub frmApprovalApplications_Init(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Init
         Try
-            Dim s As Integer = 100
+
             ConstrStaff = ConfigurationManager.ConnectionStrings("ConStaff").ConnectionString
         Catch ex As Exception
             lblMSG.Text = ex.Message
@@ -157,6 +157,7 @@ System.Web.Services.WebMethod()> _
                     'BindPageLoad_App()
                     BindApplication()
                     txt_StudentID.Focus()
+                    Dim Ks As Integer = 1000
                 End If
             Else
                 Session.Clear()

@@ -135,6 +135,7 @@ System.Web.Services.WebMethod()> _
 
     Private Sub frmApprovalApplications_Init(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Init
         Try
+            Dim s As Integer = 100
             ConstrStaff = ConfigurationManager.ConnectionStrings("ConStaff").ConnectionString
         Catch ex As Exception
             lblMSG.Text = ex.Message
